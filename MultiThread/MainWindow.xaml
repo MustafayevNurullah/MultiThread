@@ -8,8 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
-        <TextBox Width="500" Height="50" Text="{Binding CurrentText,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
-        <ListBox Width="500" Height="40"></ListBox>
+        <TextBox Width="500" Height="50" Text="{Binding CurrentText,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <ListBox ItemsSource="{Binding AllText}"  Width="200"  Height="100">
+            </ListBox>
         </StackPanel>
     </Grid>
 </Window>
